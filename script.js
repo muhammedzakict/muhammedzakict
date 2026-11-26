@@ -4,12 +4,13 @@ const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 
 /* ------------------------------------------------------------
-   Preloader: hide on load, never block longer than 2.5s.
+   Preloader: hide once fonts are ready (the hero name is the
+   largest paint, so waiting on images would delay LCP).
+   Never block longer than 1.5s.
    ------------------------------------------------------------ */
 const finishLoading = () => root.classList.remove('is-loading');
-if (document.readyState === 'complete') finishLoading();
-else window.addEventListener('load', () => setTimeout(finishLoading, reduceMotion ? 0 : 350), { once: true });
-setTimeout(finishLoading, 2500);
+(document.fonts?.ready ?? Promise.resolve()).then(() => setTimeout(finishLoading, reduceMotion ? 0 : 200));
+setTimeout(finishLoading, 1500);
 
 /* ------------------------------------------------------------
    Menu overlay
