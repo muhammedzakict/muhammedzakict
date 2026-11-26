@@ -3,295 +3,323 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c0c0d">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
   <meta name="description"
-    content="Muhammed Zaki C T — MERN stack developer building fast, responsive, user-friendly web applications. Based in Kozhikode, Kerala.">
-  <meta property="og:title" content="Muhammed Zaki C T — Full Stack Developer">
+    content="Muhammed Zaki C T — software developer at Brandhackers building fast, responsive, user-friendly web applications. Based in Kozhikode, Kerala.">
+  <meta property="og:title" content="Muhammed Zaki C T — Software Developer at Brandhackers">
   <meta property="og:description" content="MERN stack developer building fast, responsive web applications.">
   <meta property="og:image" content="./zaki.jpg">
-  <title>Muhammed Zaki C T — Full Stack Developer</title>
-  <script>
-    document.documentElement.classList.add('js');
-    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { }
-  </script>
+  <title>Muhammed Zaki C T — Software Developer at Brandhackers</title>
+  <script>document.documentElement.classList.add('js', 'is-loading');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="./zaki.jpg" fetchpriority="high">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></symbol>
-      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12m-6-6 6 6 6-6M5 20h14" /></symbol>
-      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></symbol>
-      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" /><path d="M2 9h4v12H2z" /><circle cx="4" cy="4" r="2" /></symbol>
-      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 6L2 7" /></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z" /></symbol>
-      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></symbol>
-      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z" /></symbol>
-    </defs>
-  </svg>
-
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav" id="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="#top" aria-label="Zaki, home">zaki<span>.</span></a>
-      <nav class="nav-links" id="navLinks" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Let's talk</a>
-      </nav>
-      <div class="nav-tools">
-        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle colour theme">
-          <svg class="ico show-dark"><use href="#i-sun" /></svg>
-          <svg class="ico show-light"><use href="#i-moon" /></svg>
-        </button>
-        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"
-          aria-controls="navLinks"><span></span><span></span></button>
-      </div>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <p class="preloader-word">Loading</p>
+    <span class="preloader-bar"><span></span></span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a class="wordmark" href="#top" aria-label="Muhammed Zaki C T, home">zaki c t</a>
+    <div class="header-right">
+      <a class="header-link" href="#contact">let's talk</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">menu</button>
     </div>
   </header>
 
+  <!-- MENU OVERLAY -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+    <button class="menu-close" id="menuClose" type="button">&gt; close &lt;</button>
+    <nav aria-label="Main">
+      <ol class="menu-links">
+        <li><a href="#top"><span>home</span><small>01</small></a></li>
+        <li><a href="#work"><span>work</span><small>02</small></a></li>
+        <li><a href="#about"><span>about</span><small>03</small></a></li>
+        <li><a href="#contact"><span>contact</span><small>04</small></a></li>
+        <li><a href="./resume.pdf" download><span>resume</span><small>05</small></a></li>
+      </ol>
+    </nav>
+    <ul class="menu-socials">
+      <li><a href="mailto:zakic.t9876@gmail.com">&gt; email</a></li>
+      <li><a href="https://github.com/zaki98765" target="_blank" rel="noopener">&gt; github</a></li>
+      <li><a href="https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/" target="_blank" rel="noopener">&gt; linkedin</a></li>
+      <li><a href="https://www.instagram.com/zaking._/" target="_blank" rel="noopener">&gt; instagram</a></li>
+    </ul>
+  </div>
+
   <main id="main">
     <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="tag"><span class="dot"></span>Open to work · Kozhikode, IN</p>
-          <h1 class="hero-title">
-            <span class="line">Muhammed</span>
-            <span class="line">Zaki <em>C&nbsp;T</em></span>
-          </h1>
-          <p class="hero-sub">MERN stack developer. I build clean, fast, responsive web apps — from the interface down
-            to the API and database behind it.</p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#work">See my work <svg class="ico"><use href="#i-arrow" /></svg></a>
-            <a class="btn btn-ghost" href="./resume.pdf" download>Resume <svg class="ico"><use href="#i-down" /></svg></a>
+    <section class="hero" id="top" data-scrub="exit">
+      <canvas class="dotfield" id="dotfield" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <h1 class="hero-name">
+          <span>Muhammed</span>
+          <span>Zaki C T</span>
+        </h1>
+        <div class="hero-foot">
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>software developer<br>at brandhackers</p>
+          <p class="hero-role">Software developer at Brandhackers, building fast, responsive web apps with React, Node.js, Express and MongoDB.</p>
+          <a class="scroll-hint" href="#work" aria-label="Scroll to work"><span aria-hidden="true">v</span><span aria-hidden="true">v</span><span aria-hidden="true">v</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK: 3D fly-through -->
+    <section class="work" id="work" aria-labelledby="work-title" style="--n:10">
+      <div class="stage" id="stage">
+        <h2 class="work-title" id="work-title">selected work</h2>
+        <div class="scene" id="scene">
+          <ol class="space" id="space">
+            <li class="card" style="--hue:265">
+              <a class="card-link" href="https://threadpos-frontend.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">TP</span></span>
+                <span class="card-title">ThreadPOS</span>
+                <span class="card-desc">Point-of-sale and inventory system covering sales, purchases, returns, suppliers and live sales charts.</span>
+                <span class="card-stack">MERN, JWT, Recharts</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:30">
+              <a class="card-link" href="https://github.com/zaki98765/foodieweb" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">FS</span></span>
+                <span class="card-title">Foodspot</span>
+                <span class="card-desc">Multi-role food ordering platform with user, producer and admin dashboards.</span>
+                <span class="card-stack">Express, MongoDB, OpenAI, Maps</span>
+                <span class="card-go">source code</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:145">
+              <a class="card-link" href="https://demolak.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">CE</span></span>
+                <span class="card-title">Catalyst Education</span>
+                <span class="card-desc">Website for a CMA, ACCA, CA and CS coaching institute in Kerala.</span>
+                <span class="card-stack">Client, React, Motion</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:215">
+              <a class="card-link" href="https://ct-associates.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">CT</span></span>
+                <span class="card-title">C T Associates</span>
+                <span class="card-desc">Site for a law firm presenting its advocates and legal services.</span>
+                <span class="card-stack">Client, React, MUI</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:350">
+              <a class="card-link" href="https://github.com/zaki98765/book-store" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">BS</span></span>
+                <span class="card-title">Book Store</span>
+                <span class="card-desc">Online bookstore with auth, browsing, cart, orders and an admin dashboard.</span>
+                <span class="card-stack">MERN, full stack</span>
+                <span class="card-go">source code</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:185">
+              <a class="card-link" href="https://resume-builder-qiy6.vercel.app/" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">AI</span></span>
+                <span class="card-title">AI Resume Builder</span>
+                <span class="card-desc">Multi-step resume builder that writes skills and summaries for a chosen job role.</span>
+                <span class="card-stack">React, AI, REST API</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:45">
+              <a class="card-link" href="https://products-managment-front.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">PM</span></span>
+                <span class="card-title">Product Manager</span>
+                <span class="card-desc">Inventory tool to create, view, edit and delete products.</span>
+                <span class="card-stack">React, Express, MongoDB</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:0">
+              <a class="card-link" href="https://spiderman-design-eta.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">SM</span></span>
+                <span class="card-title">Spider-Man Experience</span>
+                <span class="card-desc">Fan-made themed site exploring visual storytelling and scroll animation.</span>
+                <span class="card-stack">React, UI animation</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:235">
+              <a class="card-link" href="https://reduxcart-zeta.vercel.app" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">RK</span></span>
+                <span class="card-title">Redux Kart</span>
+                <span class="card-desc">Shopping interface with product listing, shared state and a cart.</span>
+                <span class="card-stack">React, Redux</span>
+                <span class="card-go">live site</span>
+              </a>
+            </li>
+            <li class="card" style="--hue:175">
+              <a class="card-link" href="https://github.com/zaki98765/vehicle-detectiona-nd-speed-tracking-using-YOLOv8-and-ML" target="_blank" rel="noopener">
+                <span class="plate" aria-hidden="true"><span class="plate-glyph">VT</span></span>
+                <span class="card-title">Vehicle Tracking</span>
+                <span class="card-desc">Detects and tracks vehicles in video and estimates their speed.</span>
+                <span class="card-stack">Python, OpenCV, YOLOv8</span>
+                <span class="card-go">source code</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Info bar mirrors the project nearest the camera -->
+        <div class="infobar" id="infobar" aria-hidden="true">
+          <div class="info-meta">
+            <p class="info-count"><span id="infoIndex">01</span> / <span id="infoTotal">10</span></p>
+            <p class="info-stack" id="infoStack"></p>
+          </div>
+          <p class="info-title" id="infoTitle"></p>
+          <div class="info-body">
+            <p class="info-desc" id="infoDesc"></p>
+            <a class="bracket" id="infoLink" href="#" target="_blank" rel="noopener" tabindex="-1"></a>
           </div>
         </div>
-        <figure class="portrait">
-          <img src="./zaki.jpg" width="720" height="720" alt="Portrait of Muhammed Zaki C T" fetchpriority="high"
-            decoding="async">
-          <figcaption>
-            <span>Full stack dev</span>
-            <span class="mono">B.Sc. Physics</span>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="wrap hero-meta">
-        <div class="socials">
-          <a href="https://github.com/zaki98765" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github" /></svg></a>
-          <a href="https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin" /></svg></a>
-          <a href="https://www.instagram.com/zaking._/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-instagram" /></svg></a>
-        </div>
-        <p class="mono">Design mindfully — build with purpose — keep learning</p>
-      </div>
-    </section>
-
-    <!-- STACK MARQUEE -->
-    <section class="marquee" aria-label="Technologies">
-      <div class="marquee-track">
-        <ul>
-          <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JavaScript</li><li>Angular</li>
-          <li>REST APIs</li><li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>PyTorch</li><li>Git</li>
-          <li>Bootstrap</li><li>HTML5</li><li>CSS3</li>
-        </ul>
-        <ul aria-hidden="true">
-          <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JavaScript</li><li>Angular</li>
-          <li>REST APIs</li><li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>PyTorch</li><li>Git</li>
-          <li>Bootstrap</li><li>HTML5</li><li>CSS3</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="section" id="work">
-      <div class="wrap">
-        <div class="head reveal">
-          <p class="kicker">01 — Selected work</p>
-          <h2>Things I've been building</h2>
-          <a class="link" href="https://github.com/zaki98765" target="_blank" rel="noopener">All on GitHub <svg class="ico"><use href="#i-arrow" /></svg></a>
-        </div>
-
-        <ol class="projects">
-          <li class="reveal">
-            <a class="project" href="https://threadpos-frontend.vercel.app" target="_blank" rel="noopener" style="--hue:265">
-              <span class="p-num">01</span>
-              <span class="p-title">ThreadPOS</span>
-              <span class="p-desc">Point-of-sale and inventory system — sales, purchases, returns, suppliers and live sales charts.</span>
-              <span class="p-stack">MERN · JWT · Recharts</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://github.com/zaki98765/foodieweb" target="_blank" rel="noopener" style="--hue:30">
-              <span class="p-num">02</span>
-              <span class="p-title">Foodspot</span>
-              <span class="p-desc">Multi-role food ordering platform with user, producer and admin dashboards.</span>
-              <span class="p-stack">Express · MongoDB · OpenAI · Maps</span>
-              <span class="p-go">Code <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://demolak.vercel.app" target="_blank" rel="noopener" style="--hue:145">
-              <span class="p-num">03</span>
-              <span class="p-title">Catalyst Education</span>
-              <span class="p-desc">Website for a CMA, ACCA, CA and CS coaching institute in Kerala.</span>
-              <span class="p-stack">Client · React · Motion</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://ct-associates.vercel.app" target="_blank" rel="noopener" style="--hue:215">
-              <span class="p-num">04</span>
-              <span class="p-title">C T Associates</span>
-              <span class="p-desc">Site for a law firm presenting its advocates and legal services.</span>
-              <span class="p-stack">Client · React · MUI</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://github.com/zaki98765/book-store" target="_blank" rel="noopener" style="--hue:350">
-              <span class="p-num">05</span>
-              <span class="p-title">Book Store</span>
-              <span class="p-desc">Online bookstore with auth, browsing, cart, orders and an admin dashboard.</span>
-              <span class="p-stack">MERN · Full stack</span>
-              <span class="p-go">Code <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://resume-builder-qiy6.vercel.app/" target="_blank" rel="noopener" style="--hue:185">
-              <span class="p-num">06</span>
-              <span class="p-title">AI Resume Builder</span>
-              <span class="p-desc">Multi-step resume builder that generates skills and summaries for a job role.</span>
-              <span class="p-stack">React · AI · REST API</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://products-managment-front.vercel.app" target="_blank" rel="noopener" style="--hue:45">
-              <span class="p-num">07</span>
-              <span class="p-title">Product Manager</span>
-              <span class="p-desc">Inventory CRUD — create, view, edit and delete products.</span>
-              <span class="p-stack">React · Express · MongoDB</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://spiderman-design-eta.vercel.app" target="_blank" rel="noopener" style="--hue:0">
-              <span class="p-num">08</span>
-              <span class="p-title">Spider-Man Experience</span>
-              <span class="p-desc">Themed site exploring visual storytelling and scroll animation.</span>
-              <span class="p-stack">React · UI animation</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://reduxcart-zeta.vercel.app" target="_blank" rel="noopener" style="--hue:235">
-              <span class="p-num">09</span>
-              <span class="p-title">Redux Kart</span>
-              <span class="p-desc">Shopping UI with product listing, shared state and cart.</span>
-              <span class="p-stack">React · Redux</span>
-              <span class="p-go">Live <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-          <li class="reveal">
-            <a class="project" href="https://github.com/zaki98765/vehicle-detectiona-nd-speed-tracking-using-YOLOv8-and-ML" target="_blank" rel="noopener" style="--hue:175">
-              <span class="p-num">10</span>
-              <span class="p-title">Vehicle Tracking</span>
-              <span class="p-desc">Detect, track and estimate vehicle speed from video.</span>
-              <span class="p-stack">Python · OpenCV · YOLOv8</span>
-              <span class="p-go">Code <svg class="ico"><use href="#i-arrow" /></svg></span>
-            </a>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="wrap">
-        <div class="head reveal">
-          <p class="kicker">02 — Services</p>
-          <h2>What I can help with</h2>
-        </div>
-        <div class="services">
-          <article class="svc reveal"><span class="mono">/a</span><h3>Full stack development</h3><p>Frontend and backend features with React, Node.js, Express and MongoDB.</p></article>
-          <article class="svc reveal"><span class="mono">/b</span><h3>React applications</h3><p>Reusable components, routed pages and interactive experiences.</p></article>
-          <article class="svc reveal"><span class="mono">/c</span><h3>UI-focused web design</h3><p>Clean, intuitive interfaces with clear visual hierarchy.</p></article>
-          <article class="svc reveal"><span class="mono">/d</span><h3>API integration</h3><p>Wire frontends to REST APIs with solid loading, error and data states.</p></article>
-          <article class="svc reveal"><span class="mono">/e</span><h3>Responsive builds</h3><p>Layouts that hold up on phones, tablets, laptops and big screens.</p></article>
-          <article class="svc reveal"><span class="mono">/f</span><h3>Computer vision</h3><p>Object-detection and video-analysis prototypes in Python and OpenCV.</p></article>
-        </div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="wrap about">
-        <p class="kicker reveal">03 — About</p>
-        <div class="about-body reveal">
-          <h2>Curious by nature.<br><em>Developer by choice.</em></h2>
-          <p>I'm <strong>Muhammed Zaki C T</strong>, a B.Sc. Physics graduate focused on full stack web development. I
-            turn ideas into useful products with React, Node.js, Express and MongoDB, and I've explored Python and
-            computer vision through project work.</p>
-          <p>I'm looking to join a good team, learn from experienced developers and keep sharpening my craft on
-            real-world projects.</p>
-          <dl class="facts">
-            <div><dt>Based in</dt><dd>Kozhikode, Kerala</dd></div>
-            <div><dt>Focus</dt><dd>MERN stack</dd></div>
-            <div><dt>Education</dt><dd>B.Sc. Physics</dd></div>
-          </dl>
-        </div>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <figure class="portrait" data-scrub="enter" data-end="0.4">
+        <img src="./zaki.jpg" width="720" height="720" alt="Portrait of Muhammed Zaki C T" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="about-copy">
+        <h2 class="about-title decode" id="about-title">about me</h2>
+        <p class="lead">I'm Zaki, a B.Sc. Physics graduate who moved into full stack web development. I turn ideas into
+          working products with React, Node.js, Express and MongoDB.</p>
+        <p>I've also explored Python and computer vision, building a vehicle detection and speed-tracking tool with
+          YOLOv8. Right now I work as a software developer at Brandhackers, building web products for real clients and
+          learning from an experienced team.</p>
+
+        <figure class="flow" data-scrub="enter" data-end="0.45">
+          <svg viewBox="0 0 600 190" role="img" aria-labelledby="flow-cap">
+            <!-- wires -->
+            <path class="wire" pathLength="1" d="M170 80 H430" />
+            <path class="wire" pathLength="1" d="M430 120 H170" />
+            <path id="req" d="M150 80 H450" fill="none" />
+            <path id="res" d="M450 120 H150" fill="none" />
+            <!-- data packets: requests go right, responses come back -->
+            <g class="packets">
+              <rect class="pk" x="-4" y="-4" width="8" height="8"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#req" /></animateMotion></rect>
+              <rect class="pk" x="-4" y="-4" width="8" height="8"><animateMotion dur="2.4s" begin="-1.2s" repeatCount="indefinite"><mpath href="#req" /></animateMotion></rect>
+              <rect class="pk pk-back" x="-3" y="-3" width="6" height="6"><animateMotion dur="2.4s" begin="-.6s" repeatCount="indefinite"><mpath href="#res" /></animateMotion></rect>
+              <rect class="pk pk-back" x="-3" y="-3" width="6" height="6"><animateMotion dur="2.4s" begin="-1.8s" repeatCount="indefinite"><mpath href="#res" /></animateMotion></rect>
+            </g>
+            <!-- browser -->
+            <g class="node" style="--k:0">
+              <rect class="box" x="20" y="30" width="150" height="120" rx="6" />
+              <path class="edge" d="M20 52 H170" />
+              <circle class="led" cx="34" cy="41" r="3" /><circle class="led" cx="45" cy="41" r="3" /><circle class="led" cx="56" cy="41" r="3" />
+              <rect class="type" x="36" y="70" width="96" height="8" style="--t:0s" />
+              <rect class="type" x="36" y="90" width="118" height="8" style="--t:.4s" />
+              <rect class="type" x="36" y="110" width="70" height="8" style="--t:.8s" />
+              <rect class="btn" x="36" y="126" width="40" height="12" />
+            </g>
+            <!-- server -->
+            <g class="node" style="--k:1">
+              <rect class="box" x="225" y="30" width="150" height="120" rx="6" />
+              <rect class="slot" x="240" y="45" width="120" height="22" />
+              <rect class="slot" x="240" y="79" width="120" height="22" />
+              <rect class="slot" x="240" y="113" width="120" height="22" />
+              <circle class="blink" cx="345" cy="56" r="3" style="--b:0s" />
+              <circle class="blink" cx="345" cy="90" r="3" style="--b:.3s" />
+              <circle class="blink" cx="345" cy="124" r="3" style="--b:.7s" />
+              <path class="edge" d="M252 56 H300 M252 90 H290 M252 124 H310" />
+            </g>
+            <!-- database -->
+            <g class="node" style="--k:2">
+              <path class="box" d="M445 48 V132 A60 16 0 0 0 565 132 V48" />
+              <ellipse class="box" cx="505" cy="48" rx="60" ry="16" />
+              <path class="edge ring" d="M445 76 A60 16 0 0 0 565 76" style="--b:0s" />
+              <path class="edge ring" d="M445 104 A60 16 0 0 0 565 104" style="--b:.4s" />
+            </g>
+            <text class="flow-label" x="95" y="180">React</text>
+            <text class="flow-label" x="300" y="180">Node + Express</text>
+            <text class="flow-label" x="505" y="180">MongoDB</text>
+          </svg>
+          <figcaption id="flow-cap">How a request moves through the apps I build: the React interface calls an Express API on Node.js, which reads and writes data in MongoDB.</figcaption>
+        </figure>
+
+        <h3 class="sub-title decode">experience</h3>
+        <dl class="services rv">
+          <div><dt>Brandhackers</dt><dd>Software developer. Current role.</dd></div>
+        </dl>
+
+        <h3 class="sub-title decode">what i can do for you</h3>
+        <dl class="services rv">
+          <div><dt>Full stack features</dt><dd>Frontend and backend with React, Node.js, Express and MongoDB.</dd></div>
+          <div><dt>React applications</dt><dd>Reusable components, routed pages and interactive interfaces.</dd></div>
+          <div><dt>API integration</dt><dd>Frontends wired to REST APIs with proper loading, error and empty states.</dd></div>
+          <div><dt>Responsive builds</dt><dd>Layouts that hold up on phones, tablets, laptops and large screens.</dd></div>
+          <div><dt>Computer vision</dt><dd>Object detection and video analysis prototypes in Python and OpenCV.</dd></div>
+        </dl>
+
+        <h3 class="sub-title decode">tools i use</h3>
+        <ul class="stack rv">
+          <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JavaScript</li><li>Angular</li>
+          <li>Redux</li><li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>PyTorch</li><li>Git</li>
+        </ul>
+
+        <a class="bracket" href="./resume.pdf" download>download resume</a>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <p class="kicker reveal">04 — Contact</p>
-        <h2 class="contact-title reveal"><a href="mailto:zakic.t9876@gmail.com">Let's build<br>something <em>useful.</em></a></h2>
-        <div class="contact-grid">
-          <form class="form reveal" id="contactForm" novalidate>
-            <div class="field"><input id="fullName" name="name" autocomplete="name" required maxlength="100" placeholder=" "><label for="fullName">Your name</label></div>
-            <div class="field"><input id="email" name="email" type="email" autocomplete="email" required maxlength="150" placeholder=" "><label for="email">Email</label></div>
-            <div class="field full"><input id="subject" name="subject" required maxlength="150" placeholder=" "><label for="subject">Subject</label></div>
-            <div class="field full"><textarea id="message" name="message" rows="4" required maxlength="3000" placeholder=" "></textarea><label for="message">Message</label></div>
-            <div class="full form-foot">
-              <button class="btn btn-solid" type="submit">Send via email <svg class="ico"><use href="#i-arrow" /></svg></button>
-              <p class="mono note" id="formNote" role="status">Opens your email app with the message filled in.</p>
-            </div>
-          </form>
-          <div class="channels reveal">
-            <a href="mailto:zakic.t9876@gmail.com"><svg class="ico"><use href="#i-mail" /></svg><span><small>Email</small>zakic.t9876@gmail.com</span></a>
-            <a href="tel:+919072020336"><svg class="ico"><use href="#i-phone" /></svg><span><small>Phone</small>+91 90720 20336</span></a>
-            <a href="https://wa.me/919072020336" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat" /></svg><span><small>WhatsApp</small>Message me</span></a>
-            <a href="https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin" /></svg><span><small>LinkedIn</small>Connect</span></a>
-          </div>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-head">
+        <div>
+          <h2 class="contact-title" id="contact-title" data-words data-scrub="enter" data-end="0.3">let's talk about your next project.</h2>
+          <a class="contact-mail" href="mailto:zakic.t9876@gmail.com">zakic.t9876@gmail.com</a>
         </div>
+        <figure class="globe">
+          <canvas id="globe" aria-hidden="true"></canvas>
+          <figcaption>Based in Kozhikode, India. Working remotely with teams anywhere.</figcaption>
+        </figure>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form" id="contactForm" novalidate>
+          <label class="field"><span>name</span><input name="name" autocomplete="name" required maxlength="100"></label>
+          <label class="field"><span>email</span><input name="email" type="email" autocomplete="email" required maxlength="150"></label>
+          <label class="field full"><span>subject</span><input name="subject" required maxlength="150"></label>
+          <label class="field full"><span>message</span><textarea name="message" rows="4" required maxlength="3000"></textarea></label>
+          <div class="form-foot full">
+            <button class="bracket" type="submit">send message</button>
+            <p class="note" id="formNote" role="status">Opens your email app with the message filled in.</p>
+          </div>
+        </form>
+
+        <ul class="channels rv">
+          <li><span>phone</span><a href="tel:+919072020336">+91 90720 20336</a></li>
+          <li><span>whatsapp</span><a href="https://wa.me/919072020336" target="_blank" rel="noopener">message me</a></li>
+          <li><span>linkedin</span><a href="https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/" target="_blank" rel="noopener">connect</a></li>
+          <li><span>github</span><a href="https://github.com/zaki98765" target="_blank" rel="noopener">zaki98765</a></li>
+          <li><span>instagram</span><a href="https://www.instagram.com/zaking._/" target="_blank" rel="noopener">zaking._</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <span class="logo">zaki<span>.</span></span>
-      <p class="mono">© <span id="year"></span> Muhammed Zaki C T</p>
-      <a class="mono" href="#top">Back to top ↑</a>
-    </div>
+    <span>Muhammed Zaki C T</span>
+    <span>&copy;<span id="year">2026</span></span>
+    <a href="#top">back to top</a>
   </footer>
 
   <script src="./script.js" defer></script>
+  <script src="./animations.js" defer></script>
 </body>
 
 </html>
