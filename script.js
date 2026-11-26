@@ -1,3 +1,47 @@
+// Theme toggle: remembers choice, falls back to system preference.
+const root = document.documentElement;
+document.getElementById('themeBtn')?.addEventListener('click', () => {
+  const current = root.dataset.theme
+    || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  const next = current === 'light' ? 'dark' : 'light';
+  root.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch (e) { /* storage blocked */ }
+});
+
+// Mobile menu.
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+const setMenu = (open) => {
+  navLinks.classList.toggle('open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+};
+menuBtn?.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+navLinks?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+
+// Nav background after scrolling past the top.
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 12);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// Reveal elements as they enter the viewport.
+const reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  reveals.forEach((el) => io.observe(el));
+} else {
+  reveals.forEach((el) => el.classList.add('in'));
+}
+
 // Contact form: validates locally, then opens the visitor's email client.
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
@@ -20,13 +64,3 @@ contactForm?.addEventListener('submit', (event) => {
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
-
-// Close the mobile navigation after a section link is selected.
-document.querySelectorAll('#mainNav .nav-link, #mainNav .nav-cta').forEach((link) => {
-  link.addEventListener('click', () => {
-    const nav = document.getElementById('mainNav');
-    if (nav?.classList.contains('show') && window.bootstrap) {
-      window.bootstrap.Collapse.getOrCreateInstance(nav).hide();
-    }
-  });
-});
