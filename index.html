@@ -29,19 +29,64 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Muhammed Zaki C T",
-    "url": "https://portfolio-ten-lyart-30.vercel.app/",
-    "image": "https://portfolio-ten-lyart-30.vercel.app/zaki.jpg",
-    "jobTitle": "Software Developer",
-    "worksFor": { "@type": "Organization", "name": "Brandhackers" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Kozhikode", "addressRegion": "Kerala", "addressCountry": "IN" },
-    "email": "mailto:zakic.t9876@gmail.com",
-    "knowsAbout": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "Python", "OpenCV", "YOLOv8"],
-    "sameAs": [
-      "https://github.com/zaki98765",
-      "https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/",
-      "https://www.instagram.com/zaking._/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://portfolio-ten-lyart-30.vercel.app/#website",
+        "url": "https://portfolio-ten-lyart-30.vercel.app/",
+        "name": "Muhammed Zaki C T",
+        "alternateName": "Muhammed Zaki C T Portfolio",
+        "about": {
+          "@id": "https://portfolio-ten-lyart-30.vercel.app/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "url": "https://portfolio-ten-lyart-30.vercel.app/",
+        "name": "Muhammed Zaki C T — Software Developer at Brandhackers",
+        "mainEntity": {
+          "@id": "https://portfolio-ten-lyart-30.vercel.app/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Muhammed Zaki C T",
+        "url": "https://portfolio-ten-lyart-30.vercel.app/",
+        "image": "https://portfolio-ten-lyart-30.vercel.app/zaki.jpg",
+        "jobTitle": "Software Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Brandhackers"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        },
+        "email": "mailto:zakic.t9876@gmail.com",
+        "knowsAbout": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JavaScript",
+          "Python",
+          "OpenCV",
+          "YOLOv8"
+        ],
+        "sameAs": [
+          "https://github.com/zaki98765",
+          "https://www.linkedin.com/in/muhammed-zaki-c-t-b8a219325/",
+          "https://www.instagram.com/zaking._/"
+        ],
+        "@id": "https://portfolio-ten-lyart-30.vercel.app/#person",
+        "alternateName": [
+          "Muhammed Zaki",
+          "Zaki C T",
+          "Muhammed Zaki CT"
+        ]
+      }
     ]
   }
   </script>
